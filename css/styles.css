@@ -1,0 +1,51 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./globals.css";
+
+/* 
+==========
+Header
+==========
+*/
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/main-bcg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner h2 {
+  font-family: var(--font-family-secondary);
+  color: var(--color-primary);
+}
+.banner h1 {
+  color: var(--color-primary-white);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  outline: 0.125rem solid var(--color-primary-lighter);
+  outline-offset: 5px;
+}
+.banner-btn:hover {
+  outline: 0.125rem solid var(--color-primary-light);
+}
+.content-divider {
+  min-height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--color-secondary-light),
+    var(--color-primary-light),
+    var(--color-secondary-light)
+  );
+}

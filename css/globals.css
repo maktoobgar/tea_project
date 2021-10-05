@@ -1,0 +1,74 @@
+@import "./variables.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  background: var(--color-primary-white);
+  color: var(--color-grey-1);
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+p {
+  font-family: var(--font-family-primary);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-title);
+  line-height: 1.25;
+  margin: 0rem 1rem 1rem 1rem;
+}
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+  font-size: var(--font-size-h4);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: calc(var(--font-size-h1) + 2rem);
+  }
+  h2 {
+    font-size: calc(var(--font-size-h2) + 1.5rem);
+  }
+  h3 {
+    font-size: calc(var(--font-size-h3) + 1rem);
+  }
+  h4 {
+    font-size: calc(var(--font-size-h4) + 0.5rem);
+  }
+  body {
+    font-size: calc(var(--font-size-body) + 0.125rem);
+  }
+}
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-primary-white);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px var(--color-primary);
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--color-grey-6);
+  background: var(--color-primary-light);
+  padding: 1.125rem 2.125rem;
+}

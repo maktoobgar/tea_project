@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Regular.eot");
+  src: url("../fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Regular.woff2") format("woff2"),
+    url("../fonts/Vazir-Regular.woff") format("woff"),
+    url("../fonts/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Bold.eot");
+  src: url("../fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Bold.woff2") format("woff2"),
+    url("../fonts/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Samim;
+  src: url("../fonts/Samim.eot");
+  src: url("../fonts/Samim.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Samim.woff2") format("woff2"),
+    url("../fonts/Samim.woff") format("woff"),
+    url("../fonts/Samim.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Samim;
+  src: url("../fonts/Samim-Bold.eot");
+  src: url("../fonts/Samim-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Samim-Bold.woff2") format("woff2"),
+    url("../fonts/Samim-Bold.woff") format("woff"),
+    url("../fonts/Samim-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: IranNastaliq-Web;
+  src: url("../fonts/IranNastaliq-Web.woff2") format("woff2"),
+    url("../fonts/IranNastaliq-Web.woff") format("woff"),
+    url("../fonts/IranNastaliq-Web.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

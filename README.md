@@ -13,6 +13,11 @@ I put other links from him over here for more if you want to know him better:\
 
 This project is the first project that is gonna teach me how to use `html`, `css` in a real life after learning the concepts and common tags and properties.
 
+## Used Fonts
+I used some open source Persian, English fonts and these are the list of them:
+1. [samim-font](https://github.com/rastikerdar/samim-font)
+2. [vazir-font](https://github.com/rastikerdar/vazir-font)
+3. [IranNastaliq-font](https://github.com/font-store/font-IranNastaliq)
 ## Demo
 
 This is the demo of the output for the project.

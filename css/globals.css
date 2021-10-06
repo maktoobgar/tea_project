@@ -58,6 +58,23 @@ h4 {
     font-size: calc(var(--font-size-body) + 0.125rem);
   }
 }
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: calc(var(--font-size-h1) - 1rem);
+  }
+  h2 {
+    font-size: calc(var(--font-size-h2) - 0.75rem);
+  }
+  h3 {
+    font-size: calc(var(--font-size-h3) - 0.5rem);
+  }
+  h4 {
+    font-size: calc(var(--font-size-h4) - 0.25rem);
+  }
+  body {
+    font-size: calc(var(--font-size-body) - 0.125rem);
+  }
+}
 .btn {
   background-color: var(--color-primary);
   color: var(--color-primary-white);

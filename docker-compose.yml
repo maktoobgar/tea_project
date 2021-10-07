@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  tea:
+    container_name: tea-project
+    image: nginx:alpine
+    volumes:
+      - ./configs:/etc/nginx/conf.d
+      - ./:/project
+    ports:
+      - 3000:80

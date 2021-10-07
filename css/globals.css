@@ -1,91 +1,195 @@
-@import "./variables.css";
+/*
+==========
+Variables
+==========
+*/
+:root {
+	/*
+	==========
+	Colors
+	==========
+	*/
+	/*Used to be our main color */
+	--color-primary: #269244;
+	/*Used to be our highlight on our primary color */
+	--color-primary-light: #4bbe5e;
+	--color-primary-lighter: #a9fdac;
+	/*Used to be our secondary color */
+	--color-secondary: #242119;
+	/*Used to be our highlight on our secondary color */
+	--color-secondary-light: #4b4130;
+	--color-secondary-lighter: #99865c;
+	/*Colors used for texts */
+	--color-grey-1: #090b0a;
+	--color-grey-2: #0d0f0e;
+	--color-grey-3: #101311;
+	--color-grey-4: #161b18;
+	--color-grey-5: #232a25;
+	--color-grey-6: #3c493f;
+	--color-grey-7: #5d675f;
+	--color-grey-8: #8d948e;
+	--color-grey-9: #bdc1bd;
+	--color-grey-white: #dee0de;
+	/*Used to be white */
+	--color-primary-white: #e7ffd6;
+	--color-secondary-white: #efebe2;
+	/*
+	==========
+	Fonts
+	==========
+	*/
+	--font-family-title: 'IranNastaliq-Web';
+	--font-family-primary: 'Samim';
+	--font-family-secondary: 'Vazir';
+	--font-size-h1: 3rem;
+	--font-size-h2: 2rem;
+	--font-size-h3: 1.5rem;
+	--font-size-h4: 1.25rem;
+	--font-size-body: 1.2rem;
+	/*
+	==========
+	Other
+	==========
+	*/
+	--transition: all 0.3s ease-in-out;
+	--radius: 0.5rem;
+	--scroll-size: 1rem;
+}
+/*
+==========
+Global Design
+==========
+*/
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+html {
+	/*This is used to make calculation a little bit easier */
+	/*This makes 1rem equal to 10px */
+	/*font-size: 62.5%; */
+}
+
 body {
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-body);
-  background: var(--color-primary-white);
-  color: var(--color-grey-1);
-  direction: rtl;
+	min-height: 100%;
+	font-family: var(--font-family-primary);
+	font-size: var(--font-size-body);
+	background: var(--color-primary-white);
+	color: var(--color-grey-1);
+	direction: rtl;
 }
+
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 img {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 }
+
 p {
-  font-family: var(--font-family-primary);
+	font-family: var(--font-family-primary);
 }
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-family-title);
-  line-height: 1.25;
-  margin: 0rem 1rem 1rem 1rem;
+	font-family: var(--font-family-title);
+	line-height: 1.25;
+	margin: 0rem 1rem 1rem 1rem;
 }
+
 h1 {
-  font-size: var(--font-size-h1);
+	font-size: var(--font-size-h1);
 }
+
 h2 {
-  font-size: var(--font-size-h2);
+	font-size: var(--font-size-h2);
 }
+
 h3 {
-  font-size: var(--font-size-h3);
+	font-size: var(--font-size-h3);
 }
+
 h4 {
-  font-size: var(--font-size-h4);
+	font-size: var(--font-size-h4);
 }
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: calc(var(--font-size-h1) + 2rem);
-  }
-  h2 {
-    font-size: calc(var(--font-size-h2) + 1.5rem);
-  }
-  h3 {
-    font-size: calc(var(--font-size-h3) + 1rem);
-  }
-  h4 {
-    font-size: calc(var(--font-size-h4) + 0.5rem);
-  }
-  body {
-    font-size: calc(var(--font-size-body) + 0.125rem);
-  }
-}
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: calc(var(--font-size-h1) - 1rem);
-  }
-  h2 {
-    font-size: calc(var(--font-size-h2) - 0.75rem);
-  }
-  h3 {
-    font-size: calc(var(--font-size-h3) - 0.5rem);
-  }
-  h4 {
-    font-size: calc(var(--font-size-h4) - 0.25rem);
-  }
-  body {
-    font-size: calc(var(--font-size-body) - 0.125rem);
-  }
-}
+
 .btn {
-  background-color: var(--color-primary);
-  color: var(--color-primary-white);
-  padding: 1rem 2rem;
-  font-weight: bold;
-  box-shadow: 0px 0px 5px var(--color-primary);
-  transition: var(--transition);
-  border-radius: var(--radius);
+	background-color: var(--color-primary);
+	color: var(--color-primary-white);
+	display: inline-block;
+	padding: 1rem 2rem;
+	margin: 1rem, 0;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px var(--color-primary);
+	transition: var(--transition);
+	border-radius: var(--radius);
 }
+
 .btn:hover {
-  color: var(--color-grey-6);
-  background: var(--color-primary-light);
-  padding: 1.125rem 2.125rem;
+	color: var(--color-grey-6);
+	background: var(--color-primary-light);
+}
+
+.clearfix::after,
+.clearfix::before {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*
+==========
+Media Query
+==========
+*/
+
+@media screen and (max-width: 544px) {
+	h1 {
+		font-size: calc(var(--font-size-h1) - 1rem);
+	}
+
+	h2 {
+		font-size: calc(var(--font-size-h2) - 0.75rem);
+	}
+
+	h3 {
+		font-size: calc(var(--font-size-h3) - 0.5rem);
+	}
+
+	h4 {
+		font-size: calc(var(--font-size-h4) - 0.25rem);
+	}
+
+	body {
+		font-size: calc(var(--font-size-body) - 0.125rem);
+	}
+}
+
+@media screen and (min-width: 1088px) {
+	h1 {
+		font-size: calc(var(--font-size-h1) + 2rem);
+	}
+
+	h2 {
+		font-size: calc(var(--font-size-h2) + 1.5rem);
+	}
+
+	h3 {
+		font-size: calc(var(--font-size-h3) + 1rem);
+	}
+
+	h4 {
+		font-size: calc(var(--font-size-h4) + 0.5rem);
+	}
+
+	body {
+		font-size: calc(var(--font-size-body) + 0.125rem);
+	}
 }

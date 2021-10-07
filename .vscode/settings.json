@@ -1,4 +1,11 @@
 {
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "previewServer.startupProject": "tea_project",
+    "previewServer.browsers": [
+        "firefox"
+    ],
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "all",
+    "prettier.singleQuote": true
 }

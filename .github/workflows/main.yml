@@ -1,0 +1,18 @@
+name: main-CI-CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Docker Restart
+        run: |
+          docker container stop tea-project
+          docker container start tea-project

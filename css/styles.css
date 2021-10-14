@@ -135,8 +135,8 @@ About
 }
 
 .section-center {
-	padding: 0.75rem 0.75rem;
-	margin: 1rem auto;
+	padding: 1.75rem 0.75rem;
+	margin: 0 auto;
 	width: 85vw;
 	transition: var(--transition);
 	max-width: 36rem;
@@ -355,4 +355,133 @@ Services
 		width: 30%;
 		margin-right: 3.33%;
 	}
+}
+
+/* 
+==========
+Contact
+==========
+*/
+
+.contact {
+	background: var(--color-grey-white);
+}
+
+.contact-form,
+.contact-info {
+	margin: 1rem 0;
+	max-width: 35rem;
+	margin: 0 auto;
+}
+
+.contact-item {
+	margin-bottom: 1.75rem;
+}
+
+.contact-title {
+	color: var(--color-primary);
+}
+
+.contact-icon {
+	margin: 0 0 0 0.5rem;
+}
+
+.contact-text {
+	line-height: 2rem;
+}
+
+.contact-form {
+	background: white;
+	border-radius: var(--radius);
+	text-align: center;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: var(--transition);
+}
+
+.contact-form:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+	padding-top: 1.25rem;
+	color: var(--color-grey-5);
+}
+
+.form-group {
+	padding: 1rem 1.5rem;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: none;
+	margin-bottom: 1.25rem;
+	background-color: var(--color-grey-whiter);
+	border-radius: var(--radius);
+}
+
+.form-control::placeholder {
+	font-family: var(--font-family-primary);
+	font-size: 1rem;
+	color: var(--color-grey-5);
+}
+
+.submit-btn {
+	width: 100%;
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	font-family: var(--font-family-secondary);
+	font-size: 1rem;
+}
+
+.max-width-remover {
+	max-width: none;
+}
+
+@media screen and (min-width: 1170px) {
+	.contact-form,
+	.contact-info {
+		float: right;
+		width: 50%;
+		max-width: none;
+	}
+	.contact-text {
+		line-height: 3rem;
+	}
+}
+
+/* 
+==========
+Footer
+==========
+*/
+
+.footer {
+	background: #222;
+	text-align: center;
+}
+
+.social-icon {
+	color: var(--color-grey-white);
+	font-size: 1.5rem;
+	margin-right: 1rem;
+	transition: var(--transition);
+}
+
+.social-icon:hover {
+	color: var(--color-primary);
+}
+
+.footer-text {
+	direction: ltr;
+	margin-top: 1.25rem;
+	color: var(--color-grey-whiter);
+	word-spacing: 0.2rem;
+	letter-spacing: 0.01rem;
+}
+
+.company {
+	color: var(--color-primary);
 }

@@ -485,3 +485,80 @@ Footer
 .company {
 	color: var(--color-primary);
 }
+
+/* 
+==========
+Navbar
+==========
+*/
+
+.nav-btn {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	font-size: 2.5rem;
+	color: var(--color-primary);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 2;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+	background: var(--color-grey-white);
+	min-width: 15rem;
+	transform: translateX(100%);
+	transition: var(--transition);
+}
+
+.showNav {
+	transform: translate(0);
+}
+
+.navbar-header {
+	text-align: left;
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+.nav-close {
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: #f29c9c;
+	transition: var(--transition);
+}
+
+.nav-close:hover {
+	color: #bb2525;
+}
+
+.nav-items {
+	list-style-type: none;
+}
+
+.nav-link {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.25rem 1rem;
+	color: var(--color-grey-7);
+	transition: var(--transition);
+}
+
+.nav-link:hover {
+	background: var(--color-primary-lighter);
+	color: var(--color-primary-light);
+	padding-right: 1.5rem;
+	border-right: 0.25rem solid var(--color-primary);
+}
+
+@media screen and (min-width: 36rem) {
+	.navbar {
+		width: 30vw;
+		max-width: 20rem;
+	}
+}

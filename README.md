@@ -1,4 +1,4 @@
-# Intro
+# Introducing Tea Project
 
 ## John Smilga
 
@@ -31,7 +31,7 @@ All icons in this project downloaded from [Fontawesome](https://fontawesome.com/
 
 ### Pictures
 
-All of the pictures used in this project, downloaded from [Pexels](https://www.pexels.com/).\
+All of the pictures used in this project, downloaded from [Pexels](https://www.pexels.com/).
 
 **Note**: Feel free to use from these resources cause all of them are free and can be used by anyone.
 

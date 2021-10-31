@@ -13,11 +13,28 @@ I put other links from him over here for more if you want to know him better:\
 
 This project is the first project that is gonna teach me how to use `html`, `css` in a real life after learning the concepts and common tags and properties.
 
-## Used Fonts
+Ok... At this time(09/31/2021) the project is actually done, you can see the end results at it's domain address in tea-project.maktoobgar.ir.
+
+## Resources
+
+### Used Fonts
+
 I used some open source Persian, English fonts and these are the list of them:
+
 1. [samim-font](https://github.com/rastikerdar/samim-font)
 2. [vazir-font](https://github.com/rastikerdar/vazir-font)
 3. [IranNastaliq-font](https://github.com/font-store/font-IranNastaliq)
+
+### Fontawesome
+
+All icons in this project downloaded from [Fontawesome](https://fontawesome.com/).
+
+### Pictures
+
+All of the pictures used in this project, downloaded from [Pexels](https://www.pexels.com/).\
+
+**Note**: Feel free to use from these resources cause all of them are free and can be used by anyone.
+
 ## Demo
 
 This is the demo of the output for the project.

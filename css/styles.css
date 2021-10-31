@@ -17,6 +17,7 @@ Header
 	background-attachment: fixed;
 	position: relative;
 	text-align: center;
+	overflow-x: hidden;
 }
 
 .banner {
@@ -29,17 +30,20 @@ Header
 .banner h2 {
 	font-family: var(--font-family-secondary);
 	color: var(--color-primary);
+	animation: slide_from_right 5s ease-in-out 0s 1;
 }
 
 .banner h1 {
 	color: var(--color-primary-white);
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+	animation: slide_from_left 5s ease-in-out 0s 1;
 }
 
 .banner-btn {
 	outline: 0.125rem solid var(--color-primary-lighter);
 	outline-offset: 5px;
+	animation: show 5s ease 0s 1;
 }
 
 .banner-btn:hover {
@@ -500,6 +504,7 @@ Navbar
 	color: var(--color-primary);
 	z-index: 1;
 	cursor: pointer;
+	animation: bounce 2s ease infinite;
 }
 
 .navbar {

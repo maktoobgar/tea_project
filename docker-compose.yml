@@ -4,6 +4,7 @@ services:
   tea:
     container_name: tea-project
     image: nginx:alpine
+    restart: always
     volumes:
       - ./configs:/etc/nginx/conf.d
       - ./:/project

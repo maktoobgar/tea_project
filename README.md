@@ -35,6 +35,10 @@ All of the pictures used in this project, downloaded from [Pexels](https://www.p
 
 **Note**: Feel free to use from these resources cause all of them are free and can be used by anyone.
 
+### Important
+
+**Note**: fontawesome needed to host this right.
+
 ## Demo
 
 This is the demo of the output for the project.

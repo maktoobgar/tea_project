@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   tea:
-    container_name: restaurnat-meals
+    container_name: tea-project.maktoobgar.ir
     image: nginx:alpine
     restart: always
     volumes:
